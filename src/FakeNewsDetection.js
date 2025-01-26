@@ -29,7 +29,7 @@ const FakeNewsDetection = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://api-url.com/analyze", {
+      const response = await fetch("https://fake-news-detection-9eyq.onrender.com/predict/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +105,7 @@ const FakeNewsDetection = () => {
         {result && (
           <Card className="mt-6">
             <CardContent className="text-center">
-              {result === "fake" ? (
+              {result.toLowerCase() === "fake" ? (
                 <p className="text-red-600 text-xl font-bold">
                   Fake News Detected
                 </p>
