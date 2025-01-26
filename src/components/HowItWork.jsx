@@ -26,6 +26,9 @@ const HowItWork = () => {
           altText="output"
           description="Output the status"
         />
+        <h1 className="font-semibold sm:hidden">
+          Input an article ---> Analyse ---> Output the status
+        </h1>
       </div>
     </>
   );
