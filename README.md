@@ -1,0 +1,1 @@
+#Fake nes detection
